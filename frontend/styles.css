@@ -123,3 +123,36 @@ h1 {
   padding: 20px 0;
 }
 
+#listaTareas li input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #6a5af9;
+  cursor: pointer;
+  flex-shrink: 0;
+  margin-right: 12px;
+}
+
+#listaTareas li span {
+  flex: 1;
+  color: #2d2d3a;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+#listaTareas li:has(input:checked) span {
+  opacity: 0.5;
+}
+
+#listaTareas li {
+  animation: aparecer 0.25s ease;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
