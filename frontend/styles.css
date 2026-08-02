@@ -156,3 +156,90 @@ h1 {
     transform: translateY(0);
   }
 }
+
+#formLogin h2,
+#formRegistro h2 {
+  color: #2d2d3a;
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.input-auth {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e5e5ec;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  margin-bottom: 12px;
+  transition: border-color 0.2s ease;
+}
+
+.input-auth:focus {
+  border-color: #6a5af9;
+}
+
+.btn-auth {
+  width: 100%;
+  background: #6a5af9;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+  margin-bottom: 12px;
+}
+
+.btn-auth:hover {
+  background: #5847e0;
+}
+
+.btn-auth:active {
+  transform: scale(0.97);
+}
+
+#formLogin p,
+#formRegistro p {
+  text-align: center;
+  color: #6b6b7a;
+  font-size: 0.9rem;
+}
+
+#formLogin a,
+#formRegistro a {
+  color: #6a5af9;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#formLogin a:hover,
+#formRegistro a:hover {
+  text-decoration: underline;
+}
+
+#mensajeError {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 8px;
+  min-height: 20px;
+}
+
+#btnLogout {
+  background: #ff5c72;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background 0.2s ease;
+}
+
+#btnLogout:hover {
+  background: #e8425a;
+}

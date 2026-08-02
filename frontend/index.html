@@ -3,19 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Gestor de Tareas</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body >
+<body>
 
-  <div class="contenedor">
-  <h1>Gestor de Tareas</h1>
-  <div class="fila-input">
-    <input type="text" id="inputTarea" placeholder="Escribe una tarea">
-    <button id="btnAgregar">Agregar</button>
-  </div>
-  <ul id="listaTareas"></ul>
+  <div class="contenedor" id="seccionAuth">
+    <h1>Gestor de Tareas</h1>
+
+    <div id="formLogin">
+  <h2>Iniciar sesión</h2>
+  <input type="email" id="loginEmail" class="input-auth" placeholder="Email">
+  <input type="password" id="loginPassword" class="input-auth" placeholder="Contraseña">
+  <button id="btnLogin" class="btn-auth">Iniciar sesión</button>
+  <p>¿No tienes cuenta? <a href="#" id="irARegistro">Regístrate</a></p>
 </div>
+
+<div id="formRegistro" style="display: none;">
+  <h2>Crear cuenta</h2>
+  <input type="text" id="registroNombre" class="input-auth" placeholder="Nombre">
+  <input type="email" id="registroEmail" class="input-auth" placeholder="Email">
+  <input type="password" id="registroPassword" class="input-auth" placeholder="Contraseña">
+  <button id="btnRegistro" class="btn-auth">Registrarse</button>
+  <p>¿Ya tienes cuenta? <a href="#" id="irALogin">Inicia sesión</a></p>
+</div>
+
+    <p id="mensajeError" style="color: red;"></p>
+  </div>
+
+  <div class="contenedor" id="seccionTareas" style="display: none;">
+    <h1>Gestor de Tareas</h1>
+    <button id="btnLogout">Cerrar sesión</button>
+    <div class="fila-input">
+      <input type="text" id="inputTarea" placeholder="Escribe una tarea">
+      <button id="btnAgregar">Agregar</button>
+    </div>
+    <ul id="listaTareas"></ul>
+  </div>
+
   <script src="app.js"></script>
 </body>
 </html>
