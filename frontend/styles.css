@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -242,4 +241,35 @@ h1 {
 
 #btnLogout:hover {
   background: #e8425a;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 12px;
+  }
+
+  .contenedor {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.35rem;
+  }
+
+  .fila-input {
+    flex-direction: column;
+  }
+
+  #btnAgregar {
+    width: 100%;
+  }
+
+  #listaTareas li {
+    flex-wrap: wrap;
+  }
+
+  #listaTareas li button {
+    margin-left: 0;
+    margin-top: 8px;
+  }
 }
