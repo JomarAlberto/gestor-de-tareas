@@ -14,8 +14,8 @@ const btnLogin = document.getElementById("btnLogin");
 const btnRegistro = document.getElementById("btnRegistro");
 const btnLogout = document.getElementById("btnLogout");
 
-const API_AUTH = "http://localhost:3000/auth";
-const API_URL = "http://localhost:3000/tareas";
+const API_AUTH = "https://gestor-de-tareas-d0f7.onrender.com/auth";
+const API_URL = "https://gestor-de-tareas-d0f7.onrender.com/tareas";
 
 async function login() {
   const email = document.getElementById("loginEmail").value;
